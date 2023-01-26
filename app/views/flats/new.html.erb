@@ -1,0 +1,12 @@
+<h1>Create a new flat!</h1>
+
+
+<%= form_with model: @flat do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :address %>
+  <%= form.text_field :address %>
+
+  <%= form.submit %>
+<% end %>
